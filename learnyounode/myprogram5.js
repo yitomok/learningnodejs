@@ -1,0 +1,1 @@
+require('fs').readdir(process.argv[2], function callback (err, list) { if (!err) { list.forEach(function (file) { if (require('path').extname(file)==='.'+process.argv[3]) { console.log(file); } }) } });
